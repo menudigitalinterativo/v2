@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <title>Menu Digital</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <link rel="stylesheet" href="https://menudigitalinterativo.github.io/sistema-cardapio/style.css">
+</head>
+<body>
+  <div id="loading-overlay">
+    <img id="loader-logo-img" class="loader-logo" src="" style="display:none;">
+    <div class="progress-container"><div class="progress-bar" id="main-progress-bar"></div></div>
+    <p style="margin-top:10px; color:#888; font-size: 0.8em;">Carregando...</p>
+  </div>
+  <div id="toast-container"></div>
+  <h1>
+    <img id="company-logo" class="logo" style="display: none;" alt="Logo">
+    <span id="company-name"></span>
+  </h1>
+  <div class="search-container">
+    <i class="fas fa-search" style="color: #ccc;"></i>
+    <input type="text" id="search-input" placeholder="Buscar no cardápio...">
+  </div>
+  <div class="container">
+    <div id="menu-content"></div>
+  </div>
+  <div id="cart-float">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cart-count">0</span>
+  </div>
+  <div id="cart-modal">
+    <div class="cart-modal-content">
+      <div class="drag-handle"></div>
+      <div class="cart-header"><span>Meu Pedido</span><span id="close-cart">&times;</span></div>
+      <div class="cart-body">
+        <label>Seu Nome</label>
+        <input id="client-name" type="text" placeholder="Digite seu nome">
+        <div id="cart-items"></div>
+      </div>
+      <div class="cart-footer">
+        <button class="add-to-cart-btn" onclick="finalizarPedido()">Finalizar no WhatsApp</button>
+      </div>
+    </div>
+  </div>
+<script src="https://menudigitalinterativo.github.io/sistema-cardapio/script.js"></script>
+  <script>iniciarCardapio('./dados/cardapio.json');</script>
+</body>
+</html>
