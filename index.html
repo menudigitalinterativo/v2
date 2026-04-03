@@ -49,6 +49,17 @@
       <div class="cart-body">
         <label>Seu Nome</label>
         <input id="client-name" type="text" placeholder="Digite seu nome">
+        <label>Tipo de Entrega</label>
+<select id="tipo-entrega">
+  <option value="">Selecione</option>
+  <option value="retirada">Retirada no local</option>
+  <option value="delivery">Delivery</option>
+</select>
+
+<div id="box-bairro" style="display:none; margin-top:10px;">
+  <label>Bairro</label>
+  <select id="select-bairro"></select>
+</div>
         <div id="cart-items"></div>
       </div>
       <div class="cart-footer">
