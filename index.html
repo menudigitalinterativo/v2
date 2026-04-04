@@ -16,24 +16,26 @@
     <p style="margin-top:10px; color:#888; font-size: 0.8em;">Carregando...</p>
   </div>
   <div id="toast-container"></div>
- <header class="top-header">
-  <div class="header-left">
-    <img id="company-logo" class="logo" style="display: none;" alt="Logo">
-    <div class="header-texts">
-      <span id="company-name" class="company-name"></span>
+  <div class="fixed-top-container">
+    <header class="top-header">
+      <div class="header-left">
+        <img id="company-logo" class="logo" style="display: none;" alt="Logo">
+        <div class="header-texts">
+          <span id="company-name" class="company-name"></span>
+        </div>
+      </div>
+      <div class="header-right" onclick="abrirHorarios()" style="cursor:pointer;">
+        <span id="status-indicator" class="status-dot"></span>
+        <div class="status-text">
+          <span id="status-text">Aberto</span>
+          <small>Hoje</small>
+        </div>
+      </div>
+    </header>
+    <div class="search-container">
+      <i class="fas fa-search" style="color: #ccc;"></i>
+      <input type="text" id="search-input" placeholder="Buscar no cardápio...">
     </div>
-  </div>
-<div class="header-right" onclick="abrirHorarios()" style="cursor:pointer;">
-  <span id="status-indicator" class="status-dot"></span>
-  <div class="status-text">
-    <span id="status-text">Aberto</span>
-    <small>Hoje</small>
-  </div>
-</div>
-</header>
-  <div class="search-container">
-    <i class="fas fa-search" style="color: #ccc;"></i>
-    <input type="text" id="search-input" placeholder="Buscar no cardápio...">
   </div>
   <div class="container">
     <div id="menu-content"></div>
