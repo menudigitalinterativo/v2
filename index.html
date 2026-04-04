@@ -63,7 +63,16 @@
         <div id="cart-items"></div>
       </div>
       <div class="cart-footer">
-        <button class="add-to-cart-btn" onclick="finalizarPedido()">Finalizar no WhatsApp</button>
+      <!-- 🔥 TOTAL DO CARRINHO -->
+  <div style="margin-bottom:10px; font-size:0.9em;">
+    <div>Subtotal: <span id="subtotal-carrinho">R$ 0,00</span></div>
+    <div>Taxa: <span id="taxa-entrega-display">R$ 0,00</span></div>
+    <div><strong>Total: <span id="total-geral">R$ 0,00</span></strong></div>
+  </div>
+
+  <button class="add-to-cart-btn" onclick="finalizarPedido()">
+    Finalizar no WhatsApp
+  </button>
       </div>
     </div>
   </div>
